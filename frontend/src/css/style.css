@@ -1,0 +1,81 @@
+/* RESET (VERY IMPORTANT) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BACKGROUND */
+body {
+  background: linear-gradient(135deg, #6a11cb, #8e54e9);
+  font-family: "Poppins", sans-serif;
+}
+
+/* MAIN HOME */
+.main-home {
+  width: 100%;
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding: 80px 20px 40px;  /* reduced bottom gap */
+}
+
+/* REMOVE ANY GAP BEFORE FOOTER */
+.hero-section,
+.container,
+.container-fluid {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* HERO HOVER */
+        .heroBox:hover {
+          transform: scale(1.02);
+          box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+          transition: 0.4s ease;
+        }
+
+        /* FEATURE CARD HOVER */
+        .feature-card {
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .feature-card:hover {
+          transform: translateY(-10px) scale(1.05);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* BUTTON HOVER */
+        .btn-primary-custom {
+          background: white;
+          color: #6a11cb;
+          border: none;
+          padding: 12px 30px;
+          border-radius: 30px;
+          margin-right: 15px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .btn-primary-custom:hover {
+          background: #f3e8ff;
+          transform: scale(1.08);
+        }
+
+        .btn-outline-custom {
+          background: transparent;
+          border: 2px solid white;
+          color: white;
+          padding: 12px 30px;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .btn-outline-custom:hover {
+          background: white;
+          color: #6a11cb;
+          transform: scale(1.08);
+        }
