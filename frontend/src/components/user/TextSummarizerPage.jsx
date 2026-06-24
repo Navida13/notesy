@@ -44,7 +44,7 @@ export default function TextSummarizerPage() {
           model: "command-a-03-2025",
           message: `Summarize the following text in a short paragraph. Highlight important keywords using double asterisks:\n\n${data.inputText}`
         },
-        { headers: { Authorization: "Bearer Z1Id7I8HOA2QFmUElfL9p4VC7OfT3hoJMLz915Bs", "Content-Type": "application/json" } }
+        { headers: { Authorization: "Bearer ${import.meta.env.VITE_API_KEY}", "Content-Type": "application/json" } }
       );
 
       const result = response.data.text || response.data.message?.content?.[0]?.text || "No summary generated.";

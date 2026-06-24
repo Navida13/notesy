@@ -33,7 +33,7 @@ export default function TextSummarize() {
         },
         {
           headers: {
-            Authorization: "Bearer Z1Id7I8HOA2QFmUElfL9p4VC7OfT3hoJMLz915Bs",
+            Authorization: "Bearer ${import.meta.env.VITE_API_KEY}",
             "Content-Type": "application/json",
           },
         }
